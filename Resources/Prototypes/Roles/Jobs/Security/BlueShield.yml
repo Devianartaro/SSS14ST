@@ -1,0 +1,38 @@
+- type: job
+  id: Blueshield
+  name: job-name-blueshield
+  playTimeTracker: JobBlueshield
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 10800
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 10800
+  weight: 20
+  startingGear: BlueshieldGear
+  icon: "Blueshield"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  accessGroups:
+  - AllAccess
+
+- type: startingGear
+  id: BlueshieldGear
+  equipment:
+    neck: ClothingNeckCloakCentcomBlack
+    head: ClothingHeadCapCentcomBlack
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
+    back: ClothingBackpackERTSecurityFilled
+    shoes: ClothingShoesCentcomBlack
+    mask: ClothingMaskGasSecurity
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterVestWeb
+    id: CBURNPDA
+    ears: ClothingHeadsetAltCommand
+    belt: ClothingBeltMilitaryWebbingMedFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ClusterBangFull

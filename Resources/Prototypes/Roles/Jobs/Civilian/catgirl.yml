@@ -1,0 +1,38 @@
+- type: job
+  id: Catgirl
+  name: job-name-Catgirl
+  playTimeTracker: JobCatgirl
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 3600
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 3600
+  startingGear: CatgirlGear
+  icon: "Catgirl"
+  supervisors: job-supervisors-hop
+  canBeAntag: false
+  access:
+  - Service
+  - Maintenance
+  - Medical
+  - Bar
+
+
+- type: startingGear
+  id: CatgirlGear
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtJanimaid
+    back: ClothingBackpackSatchelFilled
+    shoes: ClothingShoesColorWhite
+    neck: ClothingNeckTieRed
+    id: ServiceWorkerPDA
+    head: ClothingHeadHatCatEars
+    ears: ClothingHeadsetService
+    pocket1: CrowbarRed
+  inhand:
+    right hand: MedkitFilled
+    left hand: BoxHug
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

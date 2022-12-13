@@ -1,0 +1,10 @@
+- type: gameMapPool
+  id: WhiteMapPool
+  maps:
+  - Bagel
+  - Box
+  - Cluster
+  - Kettle
+  - Marathon
+  - Omega
+  - Moose

@@ -1,0 +1,37 @@
+- type: job
+  id: Genetics
+  name: job-name-genetics
+  playTimeTracker: Jobgenetics
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 7200
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 7200
+  startingGear: GeneticsGear
+  icon: "Geneticist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Medical
+  - Maintenance
+  extendedAccess:
+  - Chemistry
+
+- type: startingGear
+  id: GeneticsGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientist
+    back: ClothingBackpackScienceFilled
+    shoes: ClothingShoesColorWhite
+    outerClothing: ClothingOuterWinterGen
+    mask: ClothingMaskSterile
+    id: SciencePDA
+    ears: ClothingHeadsetMedicalScience
+    gloves: ClothingHandsGlovesLatex
+    pocket1: HoloparasiteInjector
+    pocket2: Implanter
+  innerclothingskirt: ClothingUniformJumpskirtScientist
+  satchel: ClothingBackpackSatchelScienceFilled
+  duffelbag: ClothingBackpackDuffelScienceFilled

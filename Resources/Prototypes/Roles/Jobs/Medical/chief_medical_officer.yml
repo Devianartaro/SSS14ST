@@ -1,0 +1,40 @@
+# Best job.
+
+- type: job
+  id: ChiefMedicalOfficer
+  name: job-name-cmo
+  playTimeTracker: JobChiefMedicalOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobChemist
+      time: 3600
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 10800
+  weight: 10
+  startingGear: CMOGear
+  icon: "ChiefMedicalOfficer"
+  requireAdminNotify: true
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+  - Medical
+  - Command
+  - Maintenance
+  - Chemistry
+  - ChiefMedicalOfficer
+
+- type: startingGear
+  id: CMOGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCMO
+    back: ClothingBackpackMedicalFilled
+    shoes: ClothingShoesColorBrown
+    outerClothing: ClothingOuterCoatLabCmo
+    id: CMOPDA
+    ears: ClothingHeadsetAltMedical
+    belt: ClothingBeltMedicalFilled
+    pocket1: WeaponDisabler
+  innerclothingskirt: ClothingUniformJumpskirtCMO
+  satchel: ClothingBackpackSatchelMedicalFilled
+  duffelbag: ClothingBackpackDuffelMedicalFilled

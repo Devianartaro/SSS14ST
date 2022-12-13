@@ -1,0 +1,9 @@
+- type: soundCollection
+  id: StationAmbienceBase
+  files:
+    - /Audio/Ambience/shipambience.ogg
+
+- type: soundCollection
+  id: SpaceAmbienceBase
+  files:
+    - /Audio/Ambience/NoPower.ogg

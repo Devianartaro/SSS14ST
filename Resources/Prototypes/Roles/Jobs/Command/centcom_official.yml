@@ -1,0 +1,44 @@
+- type: job
+  id: CentralCommandOfficial
+  name: job-name-centcomoff
+  playTimeTracker: JobCentralCommandOfficial
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 18000
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 18000
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 18000
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 18000
+    - !type:OverallPlaytimeRequirement
+      time: 36000
+  startingGear: CentcomGear
+  icon: "Nanotrasen"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
+- type: startingGear
+  id: CentcomGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatCentcom
+    back: ClothingBackpackHolding
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterVestWeb
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCommand
+    pocket1: WeaponPulsePistol
+  satchel: ClothingBackpackSatchelHolding
+  duffelbag: ClothingBackpackDuffelHolding

@@ -1,0 +1,48 @@
+- type: job
+  id: Captain
+  name: job-name-captain
+  playTimeTracker: JobCaptain
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 9000
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 9000
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 9000
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 9000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 9000
+    - !type:OverallPlaytimeRequirement
+      time: 18000
+  weight: 20
+  startingGear: CaptainGear
+  icon: "Captain"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
+- type: startingGear
+  id: CaptainGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptain
+    back: ClothingBackpackCaptainFilled
+    shoes: ClothingShoesColorBlack
+    head: ClothingHeadHatCaptain
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesCaptain
+    outerClothing: ClothingOuterArmorCaptainCarapace
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+    pocket1: WeaponPulsePistol
+  innerclothingskirt: ClothingUniformJumpskirtCaptain
+  satchel: ClothingBackpackSatchelCaptainFilled
+  duffelbag: ClothingBackpackDuffelCaptainFilled
